@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import './App.css';
-import env from "react-dotenv";
+// import env from "react-dotenv";
 import MovieGrid from "./components/MovieGrid"
 
-const apiKey = window.env.API_KEY;
+const apiKey = "45a1d724"
 
 
 const App = () => {
