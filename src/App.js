@@ -3,7 +3,7 @@ import './App.css';
 import env from "react-dotenv";
 import MovieGrid from "./components/MovieGrid"
 
-const apiKey = "45a1d724";
+const apiKey = env.API_KEY;
 
 
 const App = () => {
@@ -37,7 +37,7 @@ useEffect(() => {
     setApiErrorMessage("")
   
     setResultError(false)
-    const url = `https://www.omdbapi.com/?apikey=${apiKey}&s=${query}&type=movie`
+    const url = `http://www.omdbapi.com/?apikey=${apiKey}&s=${query}&type=movie`
 
       try {
         const res = await fetch(url);
