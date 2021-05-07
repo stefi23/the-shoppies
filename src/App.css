@@ -129,7 +129,7 @@
 .movie-grid {
   display: grid;
   justify-items: stretch;
-  margin: 0 40px;
+  margin: 0 0.5rem;
 }
 
   @media (min-width: 768px) and (max-width: 1023px) {
