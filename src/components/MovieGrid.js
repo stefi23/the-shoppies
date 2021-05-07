@@ -4,7 +4,7 @@ import MovieCard from "./MovieCard"
 function MovieGrid({title, movies, nominatedMovies, buttonEvent, buttonTitle}) {
     return (
         <>
-        <h2 className="movie-grid-title">{buttonTitle === "Nominations" ? `${nominatedMovies.length}/5 ${title}`: `${title}` }</h2>
+        <h2 className="movie-grid-title">{title === "Nominations" ? `${nominatedMovies.length}/5 ${title}`: `${title}` }</h2>
         <div className="movie-grid">
          {movies.map((movie, index) => (
                     <MovieCard 
