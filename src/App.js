@@ -78,6 +78,7 @@ useEffect(() => {
       <input
           type="text"
           disabled = {areNominationsSet}
+          autocomplete="off"
           className="form wrapper__form__input"
           name="query"
           placeholder=""
@@ -104,7 +105,7 @@ useEffect(() => {
                 {!areNominationsSet && movies?.length > 0 ?
                 
                   <MovieGrid 
-                      title="Results" 
+                      title="Search results:" 
                       movies={movies} 
                       nominatedMovies={nominatedMovies} 
                       buttonEvent={addNomination} 
