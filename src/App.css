@@ -163,7 +163,8 @@
 
       .movie-card-container__body {
         justify-content: space-between;
-        padding-left: 10px;
+        padding: 20px 30px;
+  
       }
 
       .movie-card-container__info {

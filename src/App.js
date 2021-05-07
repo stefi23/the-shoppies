@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import './App.css';
 import env from "react-dotenv";
-// import MovieCard from "./components/MovieCard"
 import MovieGrid from "./components/MovieGrid"
 
 const apiKey = env.API_KEY;
+
 
 const App = () => {
   const [query, setQuery] = useState("")
@@ -71,7 +71,8 @@ useEffect(() => {
   }
 
   return (
-    <div className="App wrapper">
+    <div className="App">
+      <div className="wrapper">
       <h1 className="wrapper__title">The Shoppies</h1>
       <p className="wrapper__text">Time to choose your 5 favorite movies for the Shoppies nominations 🍿</p>
       <form className="form wrapper__form" onSubmit={searchMovies}>
@@ -129,7 +130,7 @@ useEffect(() => {
   
                 : null}
           </div>
-
+      </div>
     </div>
   );
 }
