@@ -37,7 +37,7 @@ useEffect(() => {
     setApiErrorMessage("")
   
     setResultError(false)
-    const url = `http://www.omdbapi.com/?apikey=${apiKey}&s=${query}&type=movie`
+    const url = `https://www.omdbapi.com/?apikey=${apiKey}&s=${query}&type=movie`
 
       try {
         const res = await fetch(url);
