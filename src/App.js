@@ -3,7 +3,7 @@ import './App.css';
 import env from "react-dotenv";
 import MovieGrid from "./components/MovieGrid"
 
-const apiKey = env.API_KEY;
+const apiKey = window.env.API_KEY;
 
 
 const App = () => {
@@ -79,7 +79,7 @@ useEffect(() => {
       <input
           type="text"
           disabled = {areNominationsSet}
-          autocomplete="off"
+          autoComplete="off"
           className="form wrapper__form__input"
           name="query"
           placeholder=""
