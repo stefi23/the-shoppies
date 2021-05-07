@@ -37,7 +37,7 @@ useEffect(() => {
     setApiErrorMessage("")
   
     setResultError(false)
-    const url = `http://www.omdbapi.com/?apikey=${apiKey}&s=${query}&type=movie`
+    const url = `https://www.omdbapi.com/?apikey=${apiKey}&s=${query}&type=movie`
 
       try {
         const res = await fetch(url);
@@ -71,8 +71,7 @@ useEffect(() => {
   }
 
   return (
-    <div className="App">
-      <div className="wrapper">
+    <div className="App wrapper">
       <h1 className="wrapper__title">The Shoppies</h1>
       <p className="wrapper__text">Time to choose your 5 favorite movies for the Shoppies nominations 🍿</p>
       <form className="form wrapper__form" onSubmit={searchMovies}>
@@ -131,7 +130,7 @@ useEffect(() => {
                 : null}
           </div>
       </div>
-    </div>
+
   );
 }
 
